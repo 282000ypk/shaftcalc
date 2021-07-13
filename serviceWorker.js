@@ -8,7 +8,7 @@ self.addEventListener('activate', function(event){
 
 var STATIC_CACHE_CONTAINER = "static_v1"
 var STATIC_FILES = [
-    "./",
+    "./index.html",
     "./index.js",
     "./index.css"
 ]
