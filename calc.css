@@ -1,0 +1,38 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container
+{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom left,#48cfad 60%,#37bc9b 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container label
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+    font-size: 40px;
+}
+.container input
+{
+    flex: 1 1 100%;
+    margin: 0 10vw;
+    font-size: 1.5em;
+}
+
+#result
+{
+    font-size: 40px;
+    border: 1px solid;
+}

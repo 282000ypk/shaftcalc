@@ -1,0 +1,20 @@
+{
+    "name": "Shaft Calculator",
+    "short_name": "ShaftCalc",
+    "icons": [
+        {
+            "src": "/calc.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        }
+    ],
+    "start_url": "/",
+    "scope": ".",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background_color": "#fff",
+    "theme_color": "#007BFF",
+    "description": "A simple shaft calculator",
+    "dir": "ltr",
+    "lang": "en-US"
+  }
