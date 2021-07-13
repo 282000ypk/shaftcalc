@@ -8,8 +8,8 @@
             "sizes": "144x144"
         }
     ],
-    "start_url": "./",
-    "scope": "./shaftcalc/index.html",
+    "start_url": "/",
+    "scope": ".",
     "display": "standalone",
     "orientation": "portrait-primary",
     "background_color": "#fff",
