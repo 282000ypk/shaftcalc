@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            *
+            {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+
+            .container
+            {
+                height: 100vh;
+                width: 100vw;
+                background: linear-gradient(to bottom left,#48cfad 60%,#37bc9b 40%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .container label
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 1 1 100%;
+                font-size: 40px;
+            }
+            .container input
+            {
+                flex: 1 1 100%;
+                margin: 0 10vw;
+                font-size: 1.5em;
+            }
+
+            #result
+            {
+                font-size: 40px;
+                border: 1px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="result">
+
+            </div>
+            <label for="diameter">Diameter</label><input type="number" id="diameter" onkeyup="calc()">
+            <label for="model">Model</label><input type="number" id="model" onkeyup="calc()">
+            
+        </div>
+        
+        <script>
+            
+
+            function calc()
+            {
+                var diameter=document.getElementById("diameter").value;
+                var model=document.getElementById("model").value;
+                var result=document.getElementById("result");
+
+                diameter=parseFloat(diameter);
+                model=parseFloat(model);
+
+                var ans=(model/(diameter-(2*model)));
+                ans=Math.atan(ans)*(180/Math.PI)
+                result.innerHTML=!isNaN(ans) ? ans: 0;      
+            }
+
+        </script>
+    </body>
+</html>
