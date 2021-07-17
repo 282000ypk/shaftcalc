@@ -47,3 +47,5 @@ self.addEventListener('fetch', function(event){
         })
     )
 })
+
+/*latest change*/
