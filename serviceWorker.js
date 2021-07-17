@@ -19,9 +19,7 @@ self.addEventListener('activate', function(event){
 
 var STATIC_CACHE_CONTAINER = "static_v1"
 var STATIC_FILES = [
-    "/",
-    "/index.js",
-    "/index.css"
+    "./index.html"
 ]
 
 self.addEventListener('install', function(event){
